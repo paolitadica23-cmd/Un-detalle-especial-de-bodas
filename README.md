@@ -5,11 +5,11 @@
 
 ![Foto de Julian y Yureltzy](./Imagen1.jpg)
 
-### 🚀 Solicitud de Integración: `vida-en-pareja`
+ 🚀 Solicitud de Integración: `vida-en-pareja`
 - **Estado:** `APROBADO POR EL CIELO` ✅
 - **Esposos:** Julian Rapalino & Yureltzy Lancheros
 
-#### ✨ Bendiciones y Cambios en Producción:
+ ✨ Bendiciones y Cambios en Producción:
 * `vida_soltero` ha sido archivada con éxito.
 * `amor_infinito` y `fe_compartida` activados al 100%.
 * Promesa de unidad, respeto y amor eterno iniciada.
