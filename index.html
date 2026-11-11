@@ -1,216 +1,33 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¡Nuestra Felicitación para Julián y Yureltzy! 💖</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
+<div align="center" style="background: linear-gradient(135deg, #1e1b4b 0%, #31103f 50%, #4c1d95 100%); padding: 50px 25px; border-radius: 24px; color: #ffffff; font-family: 'Segoe UI', sans-serif;">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <!-- Encabezado Elegante -->
+  <p style="color: #fbbf24; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">✨ Bendiciones en su Matrimonio ✨</p>
+  <h1 style="color: #ffffff; font-size: 2.3rem; margin-top: 0; font-weight: bold; border: none;">💍 ¡Felicitaciones Julián y Yureltzy! 🎉</h1>
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at center, #2e1065 0%, #0f172a 100%);
-      color: #f8fafc;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px 15px;
-      overflow-x: hidden;
-      position: relative;
-    }
-
-    /* Animación de corazones flotando */
-    .heart {
-      position: absolute;
-      color: rgba(244, 114, 182, 0.6);
-      font-size: 20px;
-      animation: float 6s infinite linear;
-      bottom: -40px;
-      z-index: 1;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-105vh) rotate(360deg);
-        opacity: 0;
-      }
-    }
-
-    /* Tarjeta Principal */
-    .card {
-      position: relative;
-      z-index: 10;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(251, 191, 36, 0.4);
-      border-radius: 24px;
-      max-width: 650px;
-      width: 100%;
-      padding: 40px 30px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-      text-align: center;
-    }
-
-    .header-tag {
-      font-family: 'Dancing Script', cursive;
-      font-size: 2rem;
-      color: #fbbf24;
-      margin-bottom: 5px;
-    }
-
-    h1 {
-      font-size: 1.9rem;
-      color: #ffffff;
-      margin-bottom: 25px;
-      font-weight: 600;
-    }
-
-    /* Foto enmarcada */
-    .photo-frame {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 25px;
-    }
-
-    .photo-frame img {
-      max-width: 100%;
-      width: 420px;
-      border-radius: 18px;
-      border: 3px solid #fbbf24;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Recuadro de Versículo / Dios */
-    .blessing-box {
-      background: rgba(251, 191, 36, 0.1);
-      border-left: 4px solid #fbbf24;
-      padding: 18px 22px;
-      border-radius: 12px;
-      margin: 20px 0 30px 0;
-      text-align: left;
-      font-style: italic;
-      color: #fef08a;
-      line-height: 1.7;
-    }
-
-    .blessing-box span {
-      display: block;
-      margin-top: 8px;
-      font-style: normal;
-      font-size: 0.88rem;
-      color: #cbd5e1;
-      text-align: right;
-    }
-
-    /* Bloque Geek Personalizado */
-    .dev-block {
-      background: rgba(15, 23, 42, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 22px;
-      text-align: left;
-      margin-bottom: 25px;
-    }
-
-    .dev-title {
-      color: #38bdf8;
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 12px;
-    }
-
-    .dev-list {
-      list-style: none;
-      line-height: 2;
-      color: #e2e8f0;
-      font-size: 0.95rem;
-    }
-
-    .dev-list li::before {
-      content: "✨ ";
-    }
-
-    .personal-message {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: #f1f5f9;
-      margin-bottom: 25px;
-    }
-
-    .commit-btn {
-      display: inline-block;
-      background: linear-gradient(90deg, #ec4899, #8b5cf6);
-      color: white;
-      padding: 12px 28px;
-      border-radius: 50px;
-      font-family: monospace;
-      font-size: 0.95rem;
-      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Generador de Corazones Flotantes -->
-  <script>
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.innerHTML = '❤️';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = Math.random() * 3 + 4 + 's';
-      heart.style.fontSize = Math.random() * 15 + 15 + 'px';
-      document.body.appendChild(heart);
-
-      setTimeout(() => {
-        heart.remove();
-      }, 7000);
-    }
-    setInterval(createHeart, 400);
-  </script>
-
-  <div class="card">
-    <div class="header-tag">Bendiciones en su Unión</div>
-    <h1>💍 ¡Muchas Felicidades Julián & Yureltzy! 🎉</h1>
-
-    <div class="photo-frame">
-      <img src="./Imagen1.jpg" alt="Julián y Yureltzy">
-    </div>
-
-    <div class="blessing-box">
-      "Las muchas aguas no podrán apagar el amor, ni lo ahogarán los ríos. Que Dios sea siempre la guía, el centro y la roca firme sobre la cual edifiquen su nuevo hogar."
-      <span>— Cantares 8:7 🙏✨</span>
-    </div>
-
-    <div class="dev-block">
-      <div class="dev-title">🚀 Solicitud de Integración Especial: <code>vida-en-pareja</code></div>
-      <ul class="dev-list">
-        <li><strong>Estado:</strong> Bendecido y Aprobado por el Cielo ✅</li>
-        <li><strong>Esposos:</strong> Julián Rapalino & Yureltzy Lancheros</li>
-        <li><code>vida_soltero</code> ha sido archivada con éxito.</li>
-        <li><code>amor_infinito</code> y <code>fe_compartida</code> activados al 100%.</li>
-      </ul>
-    </div>
-
-    <p class="personal-message">
-      Que la paz y la gracia de Dios reinen en cada uno de sus días. Les deseo un matrimonio repleto de risas, complicidad, viajes inolvidables y una felicidad que crezca cada día más. ¡Un abrazo enorme! 🥂💖
-    </p>
-
-    <div class="commit-btn">
-      git commit -m "¡Que Dios bendiga su amor por siempre! 🙏💍"
-    </div>
+  <!-- Foto de los novios -->
+  <div style="margin: 30px 0;">
+    <img src="./Imagen1.jpg" alt="Foto de Julián y Yureltzy" style="max-width: 90%; width: 460px; border-radius: 18px; box-shadow: 0 15px 35px rgba(0,0,0,0.5); border: 3px solid #fbbf24;">
   </div>
 
-</body>
-</html>
+  <!-- Versículo de Dios destacado -->
+  <div style="background: rgba(255, 255, 255, 0.08); border-left: 4px solid #fbbf24; max-width: 580px; padding: 20px 25px; border-radius: 12px; margin: 30px auto; text-align: left; color: #fef08a; font-size: 1.1rem; line-height: 1.7; font-style: italic;">
+    "Las muchas aguas no podrán apagar el amor, ni lo ahogarán los ríos. Que Dios sea siempre el centro, la guía y el fundamento sobre el cual edifiquen su nuevo hogar."
+    <div style="font-size: 0.9rem; color: #e2e8f0; font-style: normal; margin-top: 10px; text-align: right; font-weight: bold;">— Cantares 8:7 🙏✨</div>
+  </div>
+
+  <!-- Mensaje cálido y personal -->
+  <div style="max-width: 600px; margin: 30px auto; font-size: 1.15rem; line-height: 1.8; color: #f8fafc;">
+    <p style="margin-bottom: 20px;">
+      Hoy comienzan una maravillosa etapa juntos unidos en matrimonio. Que la paz, la gracia y la bendición de Dios reinen en cada uno de sus días.
+    </p>
+    <p style="margin-bottom: 25px;">
+      Les deseo de todo corazón una vida llena de risas, comprensión, salud, éxitos compartidos y un amor que crezca fuerte día tras día.
+    </p>
+  </div>
+
+  <!-- Cierre con bendición especial -->
+  <div style="background: rgba(251, 191, 36, 0.15); border: 1px solid rgba(251, 191, 36, 0.4); display: inline-block; padding: 14px 32px; border-radius: 50px; color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin-top: 10px;">
+    ¡Que Dios bendiga grandemente su unión hoy y siempre! 🙏💖
+  </div>
+
+</div>
